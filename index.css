@@ -1,0 +1,123 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    background-color: lightblue;
+}
+
+header{
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    display: inline;
+    font-weight: 700;
+    margin-left: 40px;
+}
+
+nav{
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 20px;
+    margin-right: 40px;
+}
+
+nav li a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+/*Creates underline*/
+nav a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .3s; /*Transitions line in when hovering*/
+}
+
+/*Activates Underline when hovering*/
+nav a:hover::before{
+    width: 100%;
+}
+
+#about-me{
+    justify-self: center;
+    width: 60%;
+    margin: 40px;
+}
+
+#photo{
+    align-self:flex-end;
+    width: 30%;
+    flex: flex-end;
+    float: inline-end;
+    margin-bottom: 100px;
+}
+
+#photo img{
+ float: right;
+ height: 400px;
+ width: 300px;
+ border-radius: 30%;
+ margin-right: 40px;
+ /*moves picture up*/
+ position: relative;
+ bottom: 150px;
+ right: 50px;
+}
+
+
+#projects{
+    margin-bottom: 50px;
+    margin: 40px;
+}
+
+#projects li a{
+    text-decoration: none;
+}
+
+#skills{
+    margin-bottom: 50px;
+    margin: 40px;
+}
+
+#skills li{
+    display: inline-block;
+    padding-left: 40px;
+    list-style-type: disc;
+}
+
+#skills li img{
+    height: 70px;
+    width:70px;
+    display: inline-block;
+}
+
+footer{
+    display: inline-block;
+    background-color: lightgray;
+    color: black;
+    width: 100%;
+    font-size: 0.75;
+    line-height: 1.25em;
+}
+
+footer img{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+footer h3{
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
